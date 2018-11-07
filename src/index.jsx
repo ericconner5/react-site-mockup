@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 import { AppContainer } from 'react-hot-loader';
 
-document.body.style.margin = 0;
+document.body.style.boxSizing = 'borderBox';
+document.body.style.backgroundColor = 'fuchsia';
+
 const render = (Component) => {
   ReactDOM.render(
     <App/>,
@@ -13,8 +15,10 @@ const render = (Component) => {
 
 render(App);
 
+/*eslint-disable */
 if (module.hot) {
   module.hot.accept('./components/App', () => {
-    render(App)
+    render(App);
   });
 }
+/*eslint-enable */

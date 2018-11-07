@@ -1,16 +1,34 @@
-import React from "react";
+import React from 'react';
 
-function Header(props){
+function Header(){
   const headerStyles = {
-    backgroundColor: '#1fd0Ff',
+    borderBottom: '2px solid #cccccc',
     fontFamily: 'comic sans MS',
-    position: 'absolute',
-    top: '0',
-    width: '100%'
-  }
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+
+    border: '1px solid green',
+    color: 'black',
+  };
+
+  const headerSectionStyles = {
+    display: 'flex',
+    flexDirection: 'row',
+    border: '1px solid green',
+
+  };
   return (
     <div style={headerStyles}>
-      <h1>Help Queue</h1>
+      <div style={headerSectionStyles}>
+        <h1>Home</h1>
+        <h1>Notifications</h1>
+        <h1>Messages</h1>
+      </div>
+      <div style={headerSectionStyles}>
+        <h1>Search</h1>
+        <h1>Tweet</h1>
+      </div>
     </div>
   );
 }

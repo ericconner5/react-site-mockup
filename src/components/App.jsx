@@ -1,14 +1,14 @@
-import React from "react";
-import Header from "./Header";
-import Newsfeed from "./Newsfeed";
+import React from 'react';
+import Header from './Header';
+import Newsfeed from './Newsfeed';
+import UserProfileInfo from './UserProfileInfo';
 
 function App(){
   return (
     <div>
       <Header/>
+      <UserProfileInfo/>
       <Newsfeed/>
-      <p><em>Firebase entries not saving!</em></p>
-      <hr/>
     </div>
   );
 }
